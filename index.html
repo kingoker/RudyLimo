@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RudyLimo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <a href="">RUDY<span>limo</span></a>
+            </div>
+            <nav class="header__navigation nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home">Home</a></li>
+                    <li class="nav__item"><a href="#service">Service</a></li>
+                    <li class="nav__item"><a href="#about">About Us</a></li>
+                    <li class="nav__item"><a href="#fleet">Fleet</a></li>
+                    <li class="nav__item"><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main" id="home">
+        <div class="main__container container">
+            <div class="main__top">
+                <div class="main__callToAction">
+                    <h1 class="main__title" data-aos="zoom-in">Hight service <br> for every customer</h1>
+                    <a href="" class="button" data-aos="zoom-in">Booking Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="main__bottom">
+            <div class="main__img" data-aos="fade-left" data-aos-duration="1500">
+                <img src="img/car on map.png" alt="Rudy's car">
+            </div>
+            <form id="booking" action="/submit-booking" method="post" class="form">
+                <div class="form__group from__group">
+                    <label for="from">From:</label>
+                    <i class="bi bi-geo-alt from__icon"></i>
+                    <input type="text" id="from" name="from" required placeholder="">
+                </div>
+                <div class="line"></div>
+                <div class="form__group to__group">
+                    <label for="to">To:</label>
+                    <i class="bi bi-geo-alt to__icon"></i>
+                    <input type="text" id="to" name="to" required>
+                </div>
+                <div class="line"></div>
+                <div class="form__group">
+                    <label for="date">Date:</label>
+                    <input placeholder="date" type="date" id="date" name="date" required>
+                </div>
+                <div class="line"></div>
+                <div class="form__group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <button class="form__button" type="submit">Go!</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <div class="service__container container">
+            <div class="service__titles">
+                <h2 class="service__title">Our service</h2>
+                <h3 class="service__subtitle">Check out our services</h3>
+            </div>
+
+            <div class="service__list">
+                <div class="service__item" data-aos="zoom-out-up">
+                    <img src="img/airport transfer.png" class="service__item_img" alt="">
+                    <div class="service__text">
+                        <h3 class="service__name">Airport transfers</h3>
+                        <p class="service__description">Flying has never been so stress-free: We will take you to the right gate on time with our airport shuttle and pick you up from there directly.</p>
+                        <a href="" class="service__button">Booking</a>
+                    </div>
+                </div>
+                <div class="service__item" data-aos="zoom-out-up">
+                    <img src="img/event transfer.png" class="service__item_img" alt="">
+                    <div class="service__text">
+                        <h3 class="service__name">Special Events</h3>
+                        <p class="service__description">Flying has never been so stress-free: We will take you to the right gate on time with our airport shuttle and pick you up from there directly.</p>
+                        <a href="" class="service__button">Booking</a>
+                    </div>
+                </div>
+                <div class="service__item" data-aos="zoom-out-up">
+                    <img src="img/chauffer transfer.png" class="service__item_img" alt="">
+                    <div class="service__text">
+                        <h3 class="service__name">Chauffeur services</h3>
+                        <p class="service__description">Flying has never been so stress-free: We will take you to the right gate on time with our airport shuttle and pick you up from there directly.</p>
+                        <a href="" class="service__button">Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about__container container">
+            <div class="about__photo" data-aos="fade-right" data-aos-duration="1000">
+                <img src="img/about.jpg" alt="" class="about__img">
+            </div>
+            <div class="about__titles" data-aos="fade-left" data-aos-duration="2000">
+                <h2 class="about__title">About Us</h2>
+                <h3 class="about__subtitle">Find out briefly but informatively about us</h3>
+                <p class="about__description">Rudy's has established itself as a premier car service and executive transportation company. Its high level of performance begins with its reservationist, extends to it's dispatchers and culminates with a professionally trained chauffeur. The company's computerized operating systems and modern, well maintained fleet of vehicles all contribute to the excellence of Rudy's overall performance.</p>
+                <div class="about__list">
+                    <div class="about__item">
+                        <i class="bi bi-clock-history"></i>
+                        <p class="about__item__text">24/7 Exclusive<br>on the road</p>
+                    </div>
+                    <div class="about__item">
+                        <i class="bi bi-luggage"></i>
+                        <p class="about__item__text">24/7 Exclusive<br>on the road</p>
+                    </div>
+                    <div class="about__item">
+                        <i class="bi bi-card-checklist"></i>
+                        <p class="about__item__text">24/7 Exclusive<br>on the road</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fleet" class="fleet">
+        <div class="fleet__container container">
+            <div class="fleet__titles">
+                <h2 class="fleet__title">Our fleet</h2>
+                <h3 class="fleet__subtitle">Take a look at our fleet</h3>
+            </div>
+            <div class="fleet__list">
+                <div class="fleet__item" data-aos="zoom-in" data-aos-duration="500">
+                    <div class="fleet__car">
+                        <div class="car__photo">
+                            <img src="img/chevrolet suburban.png" alt="">
+                        </div>
+                    </div>
+                    <div class="car__name">Chevy Suburban</div>
+                </div>
+                <div class="fleet__item" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="fleet__car">
+                        <div class="car__photo">
+                            <img src="img/chevrolet suburban.png" alt="">
+                        </div>
+                    </div>
+                    <div class="car__name">Chevy Suburban</div>
+                </div>
+                <div class="fleet__item" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="fleet__car">
+                        <div class="car__photo">
+                            <img src="img/chevrolet suburban.png" alt="">
+                        </div>
+                    </div>
+                    <div class="car__name">Chevy Suburban</div>
+                </div>
+                <div class="fleet__item" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="fleet__car">
+                        <div class="car__photo">
+                            <img src="img/chevrolet suburban.png" alt="chevrolet suburban">
+                        </div>
+                    </div>
+                    <div class="car__name">Chevy Suburban</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="travel" id="travel">
+        <div class="travel__container container">
+            <div class="travel__car">
+                <div class="travel__img" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="img/chevrolet suburban 2.png" alt="chevrolet suburban">
+                </div>
+            </div>
+            <div class="travel__information" data-aos="fade-left" data-aos-duration="2000">
+                <h2 class="travel__title">Your Next Travel With Us</h2>
+                <a href="#" class="travel__button">Booking Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="team__container container">
+            <div class="team__text">
+                <h2 class="team__title">Our Team</h2>
+                <p class="team__subtitle">Take a look to our team members</p>
+            </div>
+            <div class="team__list">
+                <div class="team__item member" data-aos="zoom-in" data-aos-duration="500">
+                    <div class="member__photo">
+                        <img src="img/man1.webp" alt="">
+                    </div>
+                    <div class="member__text">
+                        <p class="member__name">James Walker</p>
+                        <p class="member__position">Director</p>
+                    </div>
+                </div>
+                <div class="team__item member" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="member__photo">
+                        <img src="img/man2.webp" alt="">
+                    </div>
+                    <div class="member__text">
+                        <p class="member__name">Samuel Adamson</p>
+                        <p class="member__position">Manager</p>
+                    </div>
+                </div>
+                <div class="team__item member" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="member__photo">
+                        <img src="img/man1.webp" alt="">
+                    </div>
+                    <div class="member__text">
+                        <p class="member__name">Jack Aldridge</p>
+                        <p class="member__position">Chauffeur</p>
+                    </div>
+                </div>
+                <div class="team__item member" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="member__photo">
+                        <img src="img/man2.webp" alt="">
+                    </div>
+                    <div class="member__text">
+                        <p class="member__name">Thomas Davies</p>
+                        <p class="member__position">Chauffeur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="contacts__container container">
+            <div class="contacts__list">
+                <a href="https://maps.app.goo.gl/Hb3GpuCggj8LUn7Y6" target="_blank" class="contacts__item" data-aos="zoom-in">
+                    <i class="bi bi-geo-alt contacts__icon"></i>
+                    <div class="contacts__text">
+                        <p class="contacts__title">Adress</p>
+                        <div class="contacts__subtitle">1300 Westhaven Drive, Vail, CO 81657, USA</div>
+                    </div>
+                </a>
+                <a href="tel:19703062857" class="contacts__item" data-aos="zoom-in">
+                    <i class="bi bi-telephone-forward contacts__icon"></i>
+                    <div class="contacts__text">
+                        <p class="contacts__title">Telephone</p>
+                        <div class="contacts__subtitle">+1 (970) 306-2857</div>
+                    </div>
+                </a>
+                <a href="mailto:zolotojznak@gmail.com" class="contacts__item" data-aos="zoom-in">
+                    <i class="bi bi-envelope-at contacts__icon"></i>
+                    <div class="contacts__text">
+                        <p class="contacts__title">Email</p>
+                        <div class="contacts__subtitle">zolotojznak@gmail.com</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer__containe container">
+            <div class="footer__list">
+                <div class="footer__item">
+                    <h2 class="footer__title">About Us</h2>
+                    <p class="footer__link">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil eos ipsum, minus fugit reiciendis aut autem. Unde, fugit! Minima, itaque?</p>
+                </div>
+                <div class="footer__item">
+                    <h2 class="footer__title">Services</h2>
+                    <div class="footer__links">
+                        <a href="" class="footer__link">Airport Transfer</a>
+                        <a href="" class="footer__link">Chauffeur service</a>
+                        <a href="" class="footer__link">Bussiness meeting</a>
+                        <a href="" class="footer__link">Corporate trips</a>
+                        <a href="" class="footer__link">Event service</a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h2 class="footer__title">Contacts</h2>
+                    <div class="footer__links">
+                        <a href="" class="footer__link">Airport Transfer</a>
+                        <a href="" class="footer__link">Chauffeur service</a>
+                        <a href="" class="footer__link">Bussiness meeting</a>
+                        <a href="" class="footer__link">Corporate trips</a>
+                        <a href="" class="footer__link">Event service</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__aditional">
+                <a href="" class="footer__adLink">© Created by KingDesignn</a> |
+                <a href="" class="footer__adLink">Privacy Policy</a> |
+                <a href="" class="footer__adLink">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <!-- AOS animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
